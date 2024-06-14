@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
+    
+html {
+    scroll-behavior: smooth;        
+}
 
 /*HEADER*/
 .header {
@@ -16,6 +20,7 @@
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: fixed;
+    z-index: 9;
 }
 
 .logo img {
@@ -25,14 +30,14 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
     gap: 1em;
 }
 
 .navbar a {
     text-decoration: none;
     color: #0A1C69;
-    font-weight: 800;
+    font-weight: 700;
     padding: 1em;
     transition: .5s;
 }
@@ -45,20 +50,40 @@
 .home {
     width: 100%;
     height: 100vh;
-    background-color: #0A1C69;
+    background-image: url('img/bg-home.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 5% 15%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
+.blur {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    background-color: #0A1C69;
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: 0;
+}
+
 .text-container-home {
+    text-align: center;
     width: 50%;
+    position: relative;
+    z-index: 1;
 }
 
 .text-container-home h2 {
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     color: #fff;
     font-family: "Roboto Serif", serif;
     font-size: 4em;
@@ -69,4 +94,43 @@
 .text-container-home p {
     color: #fff;
     font-weight: lighter;
+}
+
+/*SOBRE*/
+.sobre {
+    width: 100%;
+    height: 100vh;
+    padding: 5% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.text-container-sobre {
+    width: 500px;
+}
+
+.text-container-sobre h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #0A1C69;
+    font-family: "Roboto Serif", serif;
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: .2em;
+}
+
+.text-container-sobre p {
+    color: #0A1C69;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.img-container-sobre {
+    width: 300px;
+}
+
+.img-container-sobre img {
+    width: 100%;
 }
