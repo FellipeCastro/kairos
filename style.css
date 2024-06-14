@@ -50,7 +50,7 @@ html {
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url('img/bg-home.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bg-home.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -61,7 +61,6 @@ html {
 }
 
 .blur {
-    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -104,7 +103,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 10%;
 }
 
 .text-container-sobre {
@@ -129,6 +128,8 @@ html {
 
 .img-container-sobre {
     width: 300px;
+    border: 3.5px solid #0A1C69;
+    border-radius: 5px;
 }
 
 .img-container-sobre img {
