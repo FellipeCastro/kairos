@@ -18,7 +18,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     position: fixed;
     z-index: 9;
 }
@@ -58,6 +58,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
 }
 
 .blur {
@@ -159,6 +160,7 @@ html {
 }
 
 .cards-container-testemunhos {
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -199,4 +201,108 @@ html {
 
 .card:hover {
     transform: scale(1.1);
+}
+
+/*PEDIDOS DE ORAÇÃO*/
+.pedidos-de-oracao {
+    width: 100%;
+    height: 100vh;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.img-container-pedidos-de-oracao {
+    width: 500px;
+    border: 3.5px solid #0A1C69;
+    border-radius: 5px;
+}
+
+.img-container-pedidos-de-oracao img {
+    width: 100%;
+}
+
+.container-pedidos-de-oracao {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container-pedidos-de-oracao h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #0A1C69;
+    font-family: "Roboto Serif", serif;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 1em;   
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input-container, 
+.textarea-container {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+.input-container label, 
+.textarea-container label {
+    color: #0A1C69;
+    font-weight: 700;
+}
+
+.input-container input, 
+.textarea-container textarea {
+    width: 100%;
+    padding: 1em;
+    outline: none;
+    border: 2px solid #0A1C69;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #0A1C69;
+}
+
+.textarea-container textarea {
+    resize: vertical;
+}
+
+.input-container input::placeholder,
+.textarea-container textarea::placeholder {
+    color: #0a1b6999;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #0A1C69;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.form-btn:hover {
+    border-color: #0A1C69;
+    color: #0A1C69;
+    background-color: transparent;
 }
