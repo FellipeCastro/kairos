@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;        
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 /*HEADER*/
 .header {
     background-color: #fff;
@@ -100,7 +104,7 @@ html {
 /*SOBRE*/
 .sobre {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 5% 15%;
     display: flex;
     justify-content: center;
@@ -141,7 +145,7 @@ html {
 /*TESTEMUNHOS*/
 .testemunhos {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 5% 10%;
     display: flex;
     flex-direction: column;
@@ -206,7 +210,7 @@ html {
 /*PEDIDOS DE ORAÇÃO*/
 .pedidos-de-oracao {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 5% 10%;
     display: flex;
     justify-content: center;
@@ -227,9 +231,6 @@ html {
 
 .container-pedidos-de-oracao {
     width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
 }
 
 .container-pedidos-de-oracao h2 {
@@ -237,7 +238,7 @@ html {
     text-align: center;
     color: #0A1C69;
     font-family: "Roboto Serif", serif;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 300;
     margin-bottom: 1em;   
 }
@@ -255,7 +256,7 @@ html {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: .3em;
+    gap: .5em;
 }
 
 .input-container label, 
@@ -291,7 +292,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: .3em;
-    border: 2px solid #fff;
+    border: 2px solid #0A1C69;
     border-radius: 5px;
     background-color: #0A1C69;
     color: #fff;
@@ -302,7 +303,44 @@ html {
 }
 
 .form-btn:hover {
-    border-color: #0A1C69;
     color: #0A1C69;
     background-color: transparent;
+}
+
+/*CONTATO*/
+.contato {
+    background-color: #0A1C69;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.contato .logo img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.list-contato {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.list-contato li {
+    transition: .5s;
+}
+
+.list-contato li a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+}
+
+.list-contato li:hover {
+    transform: translateX(10px);
 }
