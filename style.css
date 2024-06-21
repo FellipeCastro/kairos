@@ -292,7 +292,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: .3em;
-    border: 2px solid #0A1C69;
+    border: none;
     border-radius: 5px;
     background-color: #0A1C69;
     color: #fff;
@@ -303,8 +303,7 @@ body::-webkit-scrollbar {
 }
 
 .form-btn:hover {
-    color: #0A1C69;
-    background-color: transparent;
+    background-color: #0A1C6999;
 }
 
 /*CONTATO*/
@@ -316,11 +315,17 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: 10%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
 }
 
-.contato .logo img {
-    width: 200px;
-    border-radius: 50%;
+.logo-contato {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto Serif", serif;
+    font-size: 4em;
+    font-weight: 300;
 }
 
 .list-contato {
