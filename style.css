@@ -110,7 +110,7 @@ html {
 }
 
 .text-container-sobre {
-    width:600px;
+    width: 600px;
 }
 
 .text-container-sobre h2 {
@@ -197,10 +197,16 @@ html {
 .swiper-button-prev,
 .swiper-button-next {
     color: #0A1C69;
+    transition: .5s;
 }
 
-.swiper-pagination-bullet .swiper-pagination-bullet-active {
-    color: #0A1C69;
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #0A1C6999;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #0A1C69;
 }
 
 /*PEDIDOS DE ORAÇÃO*/
