@@ -218,6 +218,8 @@ html {
 
 .img-container-pedidos-de-oracao {
     width: 400px;
+    height: 500px;
+    object-fit: cover;
     border: 3.5px solid #0A1C69;
     border-radius: 5px;
 }
