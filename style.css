@@ -211,20 +211,16 @@ html {
 .pedidos-de-oracao {
     width: 100%;
     min-height: 100vh;
-    padding: 5% 10%;
+    padding: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10%;
+    gap: 5%;
 }
 
 .img-container-pedidos-de-oracao {
-    width: 400px;
-    height: 500px;
-    object-fit: cover;
-    border: 3.5px solid #0A1C69;
-    border-radius: 5px;
+    width: 500px;
 }
 
 .img-container-pedidos-de-oracao img {
@@ -242,7 +238,7 @@ html {
     font-family: "Roboto Serif", serif;
     font-size: 3em;
     font-weight: 300;
-    margin-bottom: 1em;   
+    margin-bottom: .5em;   
 }
 
 .form {
