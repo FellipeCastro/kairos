@@ -150,7 +150,17 @@ html {
     align-items: center;
 }
 
-.testemunhos h2 {
+.swiper {
+    width: 100%;
+    background-color: #eee;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.swiper-slide {
+    padding: 5% 20%;
+}
+
+.swiper-slide h2 {
     text-transform: uppercase;
     text-align: center;
     color: #0A1C69;
@@ -158,15 +168,6 @@ html {
     font-size: 3em;
     font-weight: 300;
     margin-bottom: 1em;
-}
-
-.swiper {
-    width: 100%;
-    background-color: #eee;
-}
-
-.swiper-slide {
-    padding: 5% 10%;
 }
 
 .swiper-slide img {
