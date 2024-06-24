@@ -10,6 +10,16 @@ html {
     scroll-behavior: smooth;        
 }
 
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0A1C69;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
 /*HEADER*/
 .header {
     background-color: #fff;
@@ -207,6 +217,7 @@ html {
 
 .swiper-pagination-bullet-active {
     background-color: #0A1C69;
+    transform: scale(1.2);
 }
 
 /*PEDIDOS DE ORAÇÃO*/
@@ -322,6 +333,14 @@ html {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+}
+
+.logo-contato span {
+    font-family: "Roboto Serif", serif;
+    font-size: .9em;
+}
+
+.logo-contato h1 {
     font-family: "Roboto Serif", serif;
     font-size: 4em;
     font-weight: 300;
@@ -346,8 +365,9 @@ html {
     text-decoration: none;
     color: #fff;
     padding: 1em;
+    transition: .5s;
 }
 
-.list-contato li:hover {
-    transform: translateX(10px);
+.list-contato li a:hover {
+    color: #ffffff99;
 }
