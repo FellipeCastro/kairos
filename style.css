@@ -411,6 +411,10 @@ body::-webkit-scrollbar {
         font-size: 2em;
     }
 
+    .text-container-sobre p {
+        font-size: .8em;
+    }
+
     .swiper {
         padding: 10% 0;
     }
@@ -424,12 +428,25 @@ body::-webkit-scrollbar {
         height: 150px;
     }
 
+    .swiper-slide p {
+        font-size: .8em;
+    }
+
+    .swiper-slide h3 {
+        font-size: 1em;
+    }
+
     .pedidos-de-oracao {
         padding: 15% 5%;
     }
 
     .container-pedidos-de-oracao h2 {
         font-size: 2em;
+    }
+
+    .input-container label, 
+    .textarea-container label {
+        font-size: .8em;
     }
 
     .logo-contato span {
@@ -490,7 +507,7 @@ body::-webkit-scrollbar {
         color: #fff;
         padding: 1em;
         margin: 0px 0px 30px 0px;
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: 400;
     }
 }
