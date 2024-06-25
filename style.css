@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 5% 15%;
+    padding: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -394,6 +394,44 @@ body::-webkit-scrollbar {
 }
 
 /*RESPONSIVE*/
+@media (max-width: 615px) {
+    .text-container-home h2 {
+        font-size: 3em;
+    }
+
+    .text-container-home p {
+        font-size: .8em;
+    }
+
+    .text-container-sobre h2 {
+        font-size: 2em;
+    }
+
+    .swiper h2 {
+        font-size: 2em;
+    }
+
+    .container-pedidos-de-oracao h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 990px) {
+    .contato {
+        flex-direction: column;
+        padding: 10% 5%;
+    }
+
+    .list-contato {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        margin-top: 10%;
+        padding-top: 10%;
+        border-top: 2px solid #fff;
+    }
+}
+
 @media (max-width: 1000px) {
     .menu {
         display: block;
@@ -426,5 +464,14 @@ body::-webkit-scrollbar {
         font-size: 2rem;
         font-weight: 400;
     }
+}
 
+@media (max-width: 1110px) {
+    .blur {
+        width: 100%;
+    }
+
+    .text-container-home {
+        width: 90%;
+    }
 }
