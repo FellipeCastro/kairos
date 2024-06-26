@@ -226,8 +226,8 @@ body::-webkit-scrollbar {
 .swiper-button-prev,
 .swiper-button-next {
     color: #0A1C69;
-    transition: .5s;
     padding: 2em;
+    transition: .5s;
 }
 
 .swiper-button-prev:hover,
@@ -436,6 +436,15 @@ body::-webkit-scrollbar {
         font-size: 1.2em;
         font-weight: 400;
     }
+
+    .swiper-slide {
+        padding: 0 10%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
 }
 
 @media (max-width: 990px) {
@@ -457,6 +466,10 @@ body::-webkit-scrollbar {
 @media (max-width: 615px) {
     .logo img {
         width: 80px;
+    }
+
+    .menu {
+        font-size: 1.5em;
     }
 
     .text-container-home h2 {
