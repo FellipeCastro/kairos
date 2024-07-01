@@ -436,15 +436,6 @@ body::-webkit-scrollbar {
         font-size: 1.2em;
         font-weight: 400;
     }
-
-    .swiper-slide {
-        padding: 0 10%;
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: none;
-    }
 }
 
 @media (max-width: 990px) {
@@ -511,6 +502,15 @@ body::-webkit-scrollbar {
 
     .swiper-slide h3 {
         font-size: 1em;
+    }
+
+    .swiper-slide {
+        padding: 0 10%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
     }
 
     .pedidos-de-oracao {
