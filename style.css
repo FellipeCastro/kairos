@@ -180,7 +180,7 @@ body::-webkit-scrollbar {
     width: 100%;
     background-color: #eee;
     box-shadow: 0 0 30px rgba(0, 0, 0, .1);
-    padding: 5% 0;
+    padding: 2em 0;
 }
 
 .swiper-slide {
@@ -272,7 +272,6 @@ body::-webkit-scrollbar {
     font-family: "Roboto Serif", serif;
     font-size: 3em;
     font-weight: 300;
-    margin-bottom: .5em;   
 }
 
 .form {
