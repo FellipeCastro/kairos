@@ -22,6 +22,9 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--HEADER-->
@@ -45,7 +48,8 @@
 
     <!--HOME-->
     <section class="home" id="home">
-        <div class="text-container-home">
+        <div class="blur"></div>
+        <div class="text-container-home" data-aos="fade-up">
             <h2>Bem vindo a nossa família</h2>
             <p>Que aqui na Kairós você viva o melhor tempo da sua vida na presença gloriosa do Espírito Santo!</p>
         </div>
@@ -53,13 +57,12 @@
 
     <!--SOBRE-->
     <section class="sobre" id="sobre">
-        <div class="blur"></div>
-        <div class="text-container-sobre">
+        <div class="text-container-sobre" data-aos="fade-right">
             <h2>Bem vindo a nossa família</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
         </div>
 
-        <div class="img-container-sobre">
+        <div class="img-container-sobre" data-aos="fade-left">
             <img src="img/img-sobre.svg" alt="Familia">
         </div>
     </section>
@@ -67,38 +70,38 @@
     <!--TESTEMUNHOS-->
     <section class="testemunhos" id="testemunhos">
         <div class="swiper">
-            <h2>Testemunhos</h2>
+            <h2 data-aos="zoom-in-down">Testemunhos</h2>
 
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="zoom-in-up">
                     <img src="img/foto-testemunhos.jpg" alt="Foto">
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
 
                     <h3>João Silva</h3>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="zoom-in-up">
                     <img src="img/foto-testemunhos.jpg" alt="Foto">
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
                     <h3>João Silva</h3>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="zoom-in-up">
                     <img src="img/foto-testemunhos.jpg" alt="Foto">
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
                     <h3>João Silva</h3>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="zoom-in-up">
                     <img src="img/foto-testemunhos.jpg" alt="Foto">
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
                     <h3>João Silva</h3>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="zoom-in-up">
                     <img src="img/foto-testemunhos.jpg" alt="Foto">
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fuga asperiores labore laborum commodi odit facere necessitatibus quae animi, itaque quaerat reiciendis eos illum esse aliquam architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -109,18 +112,18 @@
 
             <div class="swiper-pagination"></div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" data-aos="fade-right"></div>
+            <div class="swiper-button-next" data-aos="fade-left"></div>
         </div>
     </section>
 
     <!--PEDIDOS DE ORAÇÃO-->
     <section class="pedidos-de-oracao" id="pedidos-de-oracao">
-        <div class="img-container-pedidos-de-oracao">
+        <div class="img-container-pedidos-de-oracao" data-aos="fade-right">
             <img src="img/img-pedidos-de-oracao.svg" alt="Ilustração" />
         </div>
 
-        <div class="container-pedidos-de-oracao">
+        <div class="container-pedidos-de-oracao" data-aos="fade-left">
             <h2>Faça seu pedido de oração!</h2>
 
             <form method='post' autoComplete='off' class="form">
@@ -162,6 +165,9 @@
 
     <!--JAVASCRIPT SWIPER-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!--JAVASCRIPT-->
     <script src="script.js"></script>

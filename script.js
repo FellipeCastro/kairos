@@ -43,3 +43,9 @@ const swiper = new Swiper('.swiper', {
     //   disableOnInteraction: false,
     // },
 });
+
+// AOS
+AOS.init({
+  offset: 300,
+  duration: 1450,
+});
