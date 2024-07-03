@@ -38,7 +38,7 @@
 </head>
 <body>
     <!--HEADER-->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <a href="#home" class="logo">
             <img src="img/logo-kairos.jpg" alt="Logo Kairós">
         </a>
@@ -136,7 +136,7 @@
         <div class="container-pedidos-de-oracao" data-aos="fade-left">
             <h2>Faça seu pedido de oração!</h2>
 
-            <form method='post' autoComplete='off' class="form">
+            <form method='post' autoComplete='off' class="form" id="form">
                 <div class="input-container">
                     <label for="name">Nome:</label>
                     <input type="text" name="name" id="name" placeholder="Digite seu nome aqui" required/>
@@ -152,7 +152,7 @@
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite seu pedido de oração aqui" required></textarea>
                 </div>
 
-                <button type='submit' class="form-btn">Enviar</button>
+                <button type='submit' class="form-btn" id="form-btn"><i class="fa-solid fa-paper-plane"></i> - Enviar</button>
             </form>
         </div>
     </section>
@@ -166,7 +166,7 @@
 
         <ul class="list-contato">
             <li><a href="#"><i class="fa-brands fa-instagram"></i> - mac_kairos</a></li>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i> - Ministério Aliança Cristã Kairós </a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i> - Ministério Aliança Cristã Kairós</a></li>
             <li><a href="#"><i class="fa-solid fa-phone"></i> - 00000-0000</a></li>
             <li><a href="#"><i class="fa-solid fa-envelope"></i> - kairos@email.com</a></li>
             <li><a href="#"><i class="fa-solid fa-location-dot"></i> - Rua Amazonas, Portal dos Ipês II</a></li>
@@ -176,7 +176,7 @@
     <!--JAVASCRIPT SWIPER-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- AOS SCRIPT -->
+    <!--JAVASCRIPT AOS-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!--JAVASCRIPT-->

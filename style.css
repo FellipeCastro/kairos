@@ -337,6 +337,16 @@ body::-webkit-scrollbar {
     background-color: #0A1C6999;
 }
 
+.sent {
+    background-color: transparent;
+    border: 2px solid #0A1C69;
+    color: #0A1C69;
+}
+
+.sent:hover {
+    background-color: #fff;
+}
+
 /*CONTATO*/
 .contato {
     background-color: #0A1C69;

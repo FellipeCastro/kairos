@@ -40,12 +40,44 @@ const swiper = new Swiper('.swiper', {
 
     // autoplay: {
     //   delay: 2500,
-    //   disableOnInteraction: false,
+    //   disableOnInteraction: true,
     // },
 });
 
 // AOS
 AOS.init({
   offset: 300,
-  duration: 1450,
-});
+  duration: 1500,
+})
+
+// FORM PEDIDO DE ORAÇÃO
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('form')
+  const formBtn = document.getElementById('form-btn')
+
+  form.addEventListener('submit', (e) => {
+      e.preventDefault()
+
+      const name = document.getElementById('name').value
+      const email = document.getElementById('email').value
+      const message = document.getElementById('message').value
+
+      if (name === '' || email === '' || message === '') {
+          return
+      }
+
+      // Simulação de envio de e-mail
+      console.log("Nome:", name)
+      console.log("E-mail:", email)
+      console.log("Mensagem:", message)
+      
+      form.reset()
+      formBtn.classList.add('sent')
+      formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviado'
+
+      setTimeout(() => {
+          formBtn.classList.remove('sent')
+          formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviar'
+      }, 5000)
+  })
+})
