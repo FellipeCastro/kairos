@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Que aqui na Kairós você viva o melhor tempo da sua vida na presença gloriosa do Espírito Santo!">
+    <meta name="keywords" content="Kairós, Igreja, Deus">
+    <meta name="author" content="Fellipe Castro">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Ministério Aliança Cristã Kairós">
+    <meta property="og:description" content="Que aqui na Kairós você viva o melhor tempo da sua vida na presença gloriosa do Espírito Santo!">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
     <title>Ministério Aliança Cristã Kairós</title>
 
     <!--GOOGLE FONTS-->
@@ -20,18 +29,11 @@
     <!--CSS SWIPER-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css">
-
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!--META TAG OG-->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ministério Aliança Cristã Kairós" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="Que aqui na Kairós você viva o melhor tempo da sua vida na presença gloriosa do Espírito Santo!" />
-    <meta property="og:site_name" content="Kairós" />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
 
     <!--FAVICON-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -137,19 +139,22 @@
             <h2>Faça seu pedido de oração!</h2>
 
             <form method='post' autoComplete='off' class="form" id="form">
-                <div class="input-container">
+                <div class="input-container" id="name-container">
                     <label for="name">Nome:</label>
-                    <input type="text" name="name" id="name" placeholder="Digite seu nome aqui" required/>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome aqui"/>
+                    <span>Digite seu nome para prosseguir</span>
                 </div>
 
-                <div class="input-container">
+                <div class="input-container" id="email-container">
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail aqui" required/>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail aqui"/>
+                    <span>Digite seu e-mail para prosseguir</span>
                 </div>
 
-                <div class="textarea-container">
+                <div class="textarea-container" id="message-container">
                     <label for="message">Pedido de oração:</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite seu pedido de oração aqui" required></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite seu pedido de oração aqui"></textarea>
+                    <span>Digite seu pedido de oração para prosseguir</span>
                 </div>
 
                 <button type='submit' class="form-btn" id="form-btn"><i class="fa-solid fa-paper-plane"></i> - Enviar</button>

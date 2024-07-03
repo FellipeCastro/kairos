@@ -58,26 +58,41 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', (e) => {
       e.preventDefault()
 
+      const nameContainer = document.getElementById('name-container')
+      const emailContainer = document.getElementById('email-container')
+      const messageContainer = document.getElementById('message-container')
+
+      nameContainer.classList.remove('erro')
+      emailContainer.classList.remove('erro')
+      messageContainer.classList.remove('erro')
+
       const name = document.getElementById('name').value
       const email = document.getElementById('email').value
       const message = document.getElementById('message').value
 
-      if (name === '' || email === '' || message === '') {
-          return
+      if (name === '') {
+        nameContainer.classList.add('erro')
+        return
+      } else if (email === '') {
+        emailContainer.classList.add('erro')
+        return
+      } else if (message === '') {
+        messageContainer.classList.add('erro')
+        return
+      } else {
+        // Simulação de envio de e-mail
+        console.log("Nome:", name)
+        console.log("E-mail:", email)
+        console.log("Mensagem:", message)
+        
+        form.reset()
+        formBtn.classList.add('sent')
+        formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviado'
+  
+        setTimeout(() => {
+            formBtn.classList.remove('sent')
+            formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviar'
+        }, 5000)
       }
-
-      // Simulação de envio de e-mail
-      console.log("Nome:", name)
-      console.log("E-mail:", email)
-      console.log("Mensagem:", message)
-      
-      form.reset()
-      formBtn.classList.add('sent')
-      formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviado'
-
-      setTimeout(() => {
-          formBtn.classList.remove('sent')
-          formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviar'
-      }, 5000)
   })
 })

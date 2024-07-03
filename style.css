@@ -316,6 +316,11 @@ body::-webkit-scrollbar {
     color: #0a1b6999;
 }
 
+.input-container span, 
+.textarea-container span {
+    display: none;
+}
+
 .form-btn {
     width: 100%;
     padding: 1em;
@@ -345,6 +350,22 @@ body::-webkit-scrollbar {
 
 .sent:hover {
     background-color: #fff;
+}
+
+.erro label {
+    color: #ff5454;
+}
+
+.erro input, 
+.erro textarea {
+    border-color: #ff5454;
+}
+
+.erro span {
+    display: block;
+    color: #ff5454;
+    font-weight: 700;
+    font-size: .8em;
 }
 
 /*CONTATO*/
