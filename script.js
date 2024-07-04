@@ -1,7 +1,7 @@
+// Menu 
 const menu = document.getElementById('menu')
 const navbar = document.getElementById('navbar')
 
-// Menu 
 menu.onclick = () => {
   navbar.classList.toggle('open')
 
@@ -42,12 +42,6 @@ const swiper = new Swiper('.swiper', {
     //   delay: 2500,
     //   disableOnInteraction: true,
     // },
-});
-
-// AOS
-AOS.init({
-  offset: 300,
-  duration: 1500,
 })
 
 // FORM PEDIDO DE ORAÇÃO
@@ -62,14 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const emailContainer = document.getElementById('email-container')
       const messageContainer = document.getElementById('message-container')
 
-      nameContainer.classList.remove('erro')
-      emailContainer.classList.remove('erro')
-      messageContainer.classList.remove('erro')
-
       const name = document.getElementById('name').value
       const email = document.getElementById('email').value
       const message = document.getElementById('message').value
-
+      
+      nameContainer.classList.remove('erro')
+      emailContainer.classList.remove('erro')
+      messageContainer.classList.remove('erro')
+      
       if (name === '') {
         nameContainer.classList.add('erro')
         return
@@ -81,18 +75,24 @@ document.addEventListener('DOMContentLoaded', () => {
         return
       } else {
         // Simulação de envio de e-mail
-        console.log("Nome:", name)
-        console.log("E-mail:", email)
-        console.log("Mensagem:", message)
+        console.log('Nome:', name)
+        console.log('E-mail:', email)
+        console.log('Mensagem:', message)
         
         form.reset()
         formBtn.classList.add('sent')
         formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviado'
-  
+        
         setTimeout(() => {
             formBtn.classList.remove('sent')
             formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviar'
         }, 5000)
       }
   })
+})
+
+// AOS
+AOS.init({
+  offset: 300,
+  duration: 1500,
 })
