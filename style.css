@@ -241,8 +241,8 @@ body::-webkit-scrollbar {
     transition: .5s;
 }
 
-/*PEDIDOS DE ORAÇÃO*/
-.pedidos-de-oracao {
+/*PEDIDO DE ORAÇÃO*/
+.pedido-de-oracao {
     width: 100%;
     min-height: 100vh;
     padding: 5%;
@@ -253,19 +253,19 @@ body::-webkit-scrollbar {
     gap: 5%;
 }
 
-.img-container-pedidos-de-oracao {
+.img-container-pedido-de-oracao {
     width: 600px;
 }
 
-.img-container-pedidos-de-oracao img {
+.img-container-pedido-de-oracao img {
     width: 100%;
 }
 
-.container-pedidos-de-oracao {
+.container-pedido-de-oracao {
     width: 600px;
 }
 
-.container-pedidos-de-oracao h2 {
+.container-pedido-de-oracao h2 {
     text-transform: uppercase;
     text-align: center;
     color: #0A1C69;
@@ -328,7 +328,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: .3em;
-    border: none;
+    border: 2px solid #0A1C69;
     border-radius: 5px;
     background-color: #0A1C69;
     color: #fff;
@@ -340,6 +340,7 @@ body::-webkit-scrollbar {
 
 .form-btn:hover {
     background-color: #0A1C6999;
+    border-color: #0A1C6999;
 }
 
 .sent {
