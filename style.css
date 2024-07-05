@@ -544,11 +544,11 @@ body::-webkit-scrollbar {
         display: none;
     }
 
-    .pedidos-de-oracao {
+    .pedido-de-oracao {
         padding: 15% 5%;
     }
 
-    .container-pedidos-de-oracao h2 {
+    .container-pedido-de-oracao h2 {
         font-size: 2em;
     }
 
