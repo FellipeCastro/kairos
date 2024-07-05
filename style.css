@@ -354,17 +354,23 @@ body::-webkit-scrollbar {
 }
 
 .erro label {
-    color: #ff5454;
+    color: #ff3100;
 }
 
 .erro input, 
 .erro textarea {
-    border-color: #ff5454;
+    border-color: #ff3100;
+    color: #ff3100;
+}
+
+.erro input::placeholder,
+.erro textarea::placeholder {
+    color: #ff310099;
 }
 
 .erro span {
     display: block;
-    color: #ff5454;
+    color: #ff3100;
     font-weight: 700;
     font-size: .8em;
 }
