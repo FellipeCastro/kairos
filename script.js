@@ -82,10 +82,12 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reset()
         formBtn.classList.add('sent')
         formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviado'
+        formBtn.style.pointerEvents = 'none'
         
         setTimeout(() => {
             formBtn.classList.remove('sent')
             formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviar'
+            formBtn.style.pointerEvents = 'all'
         }, 5000)
       }
   })
