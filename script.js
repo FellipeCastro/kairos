@@ -59,11 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = document.getElementById('name').value
       const email = document.getElementById('email').value
       const message = document.getElementById('message').value
-      
+
       nameContainer.classList.remove('erro')
       emailContainer.classList.remove('erro')
       messageContainer.classList.remove('erro')
-      
+
       if (name === '') {
         nameContainer.classList.add('erro')
         return
@@ -78,12 +78,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Nome:', name)
         console.log('E-mail:', email)
         console.log('Mensagem:', message)
-        
+
         form.reset()
         formBtn.classList.add('sent')
         formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviado'
         formBtn.style.pointerEvents = 'none'
-        
+
         setTimeout(() => {
             formBtn.classList.remove('sent')
             formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviar'

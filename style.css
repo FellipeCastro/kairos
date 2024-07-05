@@ -95,7 +95,7 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 900px;
-    height: 500px;
+    height: 400px;
     background-color: #0A1C69;
     border-radius: 50%;
     filter: blur(50px);
