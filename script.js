@@ -1,4 +1,4 @@
-// Menu 
+// MENU 
 const menu = document.getElementById('menu')
 const navbar = document.getElementById('navbar')
 
@@ -20,7 +20,7 @@ window.onscroll = () => {
   navbar.classList.remove('open')
 }
 
-// Swiper
+// SWIPER
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
