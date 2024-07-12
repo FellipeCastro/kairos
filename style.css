@@ -328,7 +328,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: .3em;
-    border: 2px solid #0A1C69;
+    border: none;
     border-radius: 5px;
     background-color: #0A1C69;
     color: #fff;
@@ -340,7 +340,6 @@ body::-webkit-scrollbar {
 
 .form-btn:hover {
     background-color: #0A1C6999;
-    border-color: #0A1C6999;
 }
 
 .sent {
@@ -350,27 +349,27 @@ body::-webkit-scrollbar {
 }
 
 .sent:hover {
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .erro label {
-    color: #ff3100;
+    color: #ff0000;
 }
 
 .erro input, 
 .erro textarea {
-    border-color: #ff3100;
-    color: #ff3100;
+    border-color: #ff0000;
+    color: #ff0000;
 }
 
 .erro input::placeholder,
 .erro textarea::placeholder {
-    color: #ff310099;
+    color: #ff000099;
 }
 
 .erro span {
     display: block;
-    color: #ff3100;
+    color: #ff0000;
     font-weight: 700;
     font-size: .8em;
 }
