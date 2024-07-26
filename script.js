@@ -74,11 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
         messageContainer.classList.add('erro')
         return
       } else {
-        // Simulação de envio de e-mail
-        console.log('Nome:', name)
-        console.log('E-mail:', email)
-        console.log('Mensagem:', message)
-
         form.reset()
         formBtn.classList.add('sent')
         formBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> - Enviado'
