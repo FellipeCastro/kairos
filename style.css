@@ -390,6 +390,7 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    transition: .5s;
 }
 
 .logo-contato span {
@@ -401,6 +402,10 @@ body::-webkit-scrollbar {
     font-family: "Roboto Serif", serif;
     font-size: 4em;
     font-weight: 300;
+}
+
+.logo-contato:hover {
+    transform: scale(1.1);
 }
 
 .list-contato {
