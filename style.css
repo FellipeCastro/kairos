@@ -404,10 +404,6 @@ body::-webkit-scrollbar {
     font-weight: 300;
 }
 
-.logo-contato:hover {
-    transform: scale(1.1);
-}
-
 .list-contato {
     list-style: none;
     display: flex;
